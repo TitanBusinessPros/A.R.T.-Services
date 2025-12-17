@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.R.T. Services | Professional Cleaning in Northeast Oklahoma</title>
+    <link rel="icon" type="image/x-icon" href="https://github.com/TitanBusinessPros/A.R.T.-Services/raw/main/ART-Favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('https://github.com/TitanBusinessPros/A.R.T.-Services/raw/main/ART-BG-V.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        /* Add a subtle overlay to ensure text readability */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.85);
+            z-index: -1;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(10, 61, 98, 0.95) 0%, rgba(30, 87, 153, 0.95) 100%);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            height: 120px;
+            width: auto;
+            animation: float 6s ease-in-out infinite;
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+            transition: all 0.5s;
+        }
+
+        .logo:hover {
+            transform: scale(1.08);
+            filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-8px) rotate(0.5deg); }
+            75% { transform: translateY(-5px) rotate(-0.5deg); }
+        }
+
+        .company-name {
+            margin-left: 20px;
+            font-size: 2rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .company-name span {
+            color: #f9ca24;
+        }
+
+        .contact-header {
+            text-align: right;
+        }
+
+        .phone-numbers {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 1rem;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(10, 61, 98, 0.88), rgba(30, 87, 153, 0.92));
+            color: white;
+            padding: 100px 40px;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 50px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #f9ca24;
+            color: #0a3d62;
+            padding: 18px 45px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.4s;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
+            border: 2px solid transparent;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            color: #f9ca24;
+            border-color: #f9ca24;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-button-secondary {
+            display: inline-block;
+            background-color: transparent;
+            color: white;
+            padding: 18px 45px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.4s;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
+            border: 2px solid white;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-button-secondary:hover {
+            background-color: white;
+            color: #0a3d62;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            transition: all 0.4s;
+            text-align: center;
+            padding-bottom: 30px;
+            border-top: 5px solid #0a3d62;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border-top-color: #f9ca24;
+        }
+
+        .service-icon {
+            font-size: 4rem;
+            color: #0a3d62;
+            margin: 40px 0 25px;
+            transition: all 0.4s;
+        }
+
+        .service-card:hover .service-icon {
+            color: #f9ca24;
+            transform: scale(1.15);
+        }
+
+        .service-card h3 {
+            color: #0a3d62;
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: #666;
+            padding: 0 30px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #0a3d62;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            font-weight: 800;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-area {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            margin-bottom: 60px;
+            text-align: center;
+            border-left: 6px solid #f9ca24;
+        }
+
+        .service-area h2 {
+            color: #0a3d62;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .service-area p {
+            color: #666;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* GAME STYLES */
+        .game-section {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .game-section h2 {
+            color: #0a3d62;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .game-section .game-description {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .game-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #0a3d62 0%, #1e5799 100%);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-header {
+            margin-bottom: 20px;
+        }
+
+        .score-display {
+            font-size: 2em;
+            color: #f9ca24;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .target-display {
+            color: white;
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 25px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #f9ca24, #ffd700);
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0a3d62;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .game-grid {
+            display: inline-grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 3px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 8px;
+            border-radius: 15px;
+            max-width: 100%;
+            width: 100%;
+            aspect-ratio: 1;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 480px) {
+            .game-grid {
+                max-width: 480px;
+            }
+        }
+
+        .tile {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+            touch-action: manipulation;
+            background: white;
+        }
+
+        .tile:hover {
+            transform: scale(1.05);
+        }
+
+        .tile.selected {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(249, 202, 36, 0.8);
+            border: 3px solid #f9ca24;
+        }
+
+        .tile.matched {
+            animation: matchPulse 0.5s ease;
+        }
+
+        @keyframes matchPulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.7; }
+        }
+
+        .completion-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            text-align: center;
+            transition: transform 0.3s ease;
+            max-width: 90%;
+            box-sizing: border-box;
+        }
+
+        .completion-modal.show {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .completion-modal h2 {
+            color: #0a3d62;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .completion-modal p {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .play-again-btn {
+            background-color: #0a3d62;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .play-again-btn:hover {
+            background-color: #f9ca24;
+            color: #0a3d62;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* CONTACT FORM STYLES */
+        .contact-form {
+            background-color: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            margin-bottom: 60px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #0a3d62;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s;
+            background-color: #f9f9f9;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #0a3d62;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(10, 61, 98, 0.1);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: #0a3d62;
+            color: white;
+            padding: 18px 50px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #f9ca24;
+            color: #0a3d62;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #0a3d62 0%, #1e5799 100%);
+            color: white;
+            padding: 50px 0 20px;
+            margin-top: 80px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #f9ca24;
+            font-weight: 700;
+        }
+
+        .footer-section p {
+            margin-bottom: 12px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #f9ca24;
+        }
+
+        .coordinates {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-family: monospace;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-container {
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+            
+            .company-name {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+            
+            .contact-header {
+                text-align: center;
+            }
+            
+            .hero {
+                padding: 60px 25px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                padding: 30px 20px;
+            }
+            
+            .logo {
+                height: 80px;
+            }
+            
+            .company-name {
+                font-size: 1.3rem;
+            }
+
+            .game-container {
+                padding: 15px;
+            }
+
+            .tile {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="https://github.com/TitanBusinessPros/A.R.T.-Services/raw/main/ART-Logo-New.png" alt="A.R.T. Services Logo" class="logo">
+                <div class="company-name">A<span>.R.T.</span> Services</div>
+            </div>
+            <div class="contact-header">
+                <div class="phone-numbers">
+                    <i class="fas fa-phone"></i> 918-899-9455 | 918-625-8626
+                </div>
+                <div class="tagline">Professional Cleaning Services in Northeast Oklahoma</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Professional Cleaning Services for Grand Lake Area</h1>
+                <p>We offer Commercial, Residential and Post Construction cleaning and make ready turnover services for all of Northeast Oklahoma!</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="cta-button">Request a Free Quote</a>
+                    <a href="https://www.facebook.com/profile.php?id=61564726138886&sk=photos" target="_blank" class="cta-button-secondary">Check Out Our Work</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="service-area">
+                <h2>Serving All of Northeast Oklahoma</h2>
+                <p>From Grand Lake to Tulsa and everywhere in between, A.R.T. Services provides professional cleaning solutions for residential, commercial, and post-construction needs.</p>
+            </div>
+            
+            <h2 class="section-title">Our Cleaning Services</h2>
+            <section class="services">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Cleaning</h3>
+                    <p>Professional cleaning services for offices, retail spaces, medical facilities, and commercial properties throughout Northeast Oklahoma. We create clean, healthy work environments.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Cleaning</h3>
+                    <p>Thorough home cleaning services that leave your living space spotless and fresh. Regular maintenance cleaning, deep cleaning, and move-in/move-out services available.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Post Construction & Turnover</h3>
+                    <p>Complete cleanup after construction projects and make-ready services for property turnovers. We remove dust, debris, and construction residue for a move-in ready space.</p>
+                </div>
+            </section>
+
+            <!-- CLEANING MATCH GAME -->
+            <section class="game-section">
+                <h2>🧹 Try Our Cleaning Match Game! 🧽</h2>
+                <p class="game-description">Match cleaning tools to reach 100,000 points! Just like our cleaning services, match three or more to see sparkling results.</p>
+                
+                <div class="game-container">
+                    <div class="game-header">
+                        <div class="score-display">Score: <span id="score">0</span></div>
+                        <div class="target-display">Goal: 100,000 Points</div>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress" style="width: 0%">0%</div>
+                    </div>
+                    
+                    <div class="game-grid" id="gameGrid"></div>
+                </div>
+            </section>
+
+            <div class="completion-modal" id="completionModal">
+                <h2>🎉 Congratulations! 🎉</h2>
+                <p id="completionText">You reached 100,000 points!</p>
+                <button class="play-again-btn" onclick="resetGame()">Play Again</button>
+            </div>
+
+            <h2 class="section-title" id="contact">Contact Us for a Free Quote</h2>
+            <section class="contact-form">
+                <form action="https://formsubmit.co/artservices222@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Cleaning Service Inquiry from A.R.T. Website">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service-type">Service Type *</label>
+                        <select id="service-type" name="service-type" class="form-control" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="commercial">Commercial Cleaning</option>
+                            <option value="residential">Residential Cleaning</option>
+                            <option value="post-construction">Post Construction Cleaning</option>
+                            <option value="make-ready">Make Ready Turnover</option>
+                            <option value="other">Other Service</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message / Service Details *</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Please provide details about your cleaning needs, property size, and preferred schedule..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Request</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h3>A.R.T. Services</h3>
+                    <p>Professional cleaning services for the Grand Lake Area and all of Northeast Oklahoma.</p>
+                    <p><i class="fas fa-phone"></i> 918-899-9455</p>
+                    <p><i class="fas fa-phone"></i> 918-625-8626</p>
+                    <p><i class="fas fa-envelope"></i> artservices222@gmail.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <p>Commercial, Residential & Post Construction Cleaning</p>
+                    <p>Make Ready Turnover Services</p>
+                    <p>Serving all Northeast Oklahoma communities including Grand Lake, Langley, and surrounding areas.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Location</h3>
+                    <p>Based in Claremore, Oklahoma</p>
+                    <div class="coordinates">
+                        Latitude: 36.4631<br>
+                        Longitude: -95.0506
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025-2026 A.R.T. Services LLC. All rights reserved. | Professional Cleaning Services in Northeast Oklahoma</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // GAME VARIABLES
+        const GRID_SIZE = 8;
+        const TARGET_SCORE = 100000;
+        const cleaningIcons = ['🧹', '🧽', '🧴', '💧', '✨', '🚿'];
+        
+        let grid = [];
+        let score = 0;
+        let selectedTile = null;
+        let isAnimating = false;
+
+        // GAME INITIALIZATION
+        function createGrid() {
+            const gameGrid = document.getElementById('gameGrid');
+            gameGrid.innerHTML = '';
+            grid = [];
+            
+            for (let row = 0; row < GRID_SIZE; row++) {
+                grid[row] = [];
+                for (let col = 0; col < GRID_SIZE; col++) {
+                    const icon = Math.floor(Math.random() * cleaningIcons.length);
+                    grid[row][col] = icon;
+                    
+                    const tile = document.createElement('div');
+                    tile.className = 'tile';
+                    tile.textContent = cleaningIcons[icon];
+                    tile.dataset.row = row;
+                    tile.dataset.col = col;
+                    tile.addEventListener('click', () => handleTileClick(row, col));
+                    
+                    gameGrid.appendChild(tile);
+                }
+            }
+            
+            // Remove initial matches
+            while (findMatches().length > 0) {
+                removeMatches();
+                fillGrid();
+            }
+        }
+
+        function removeMatches() {
+            const matches = findMatches();
+            matches.forEach(({row, col}) => {
+                grid[row][col] = Math.floor(Math.random() * cleaningIcons.length);
+            });
+        }
+
+        function fillGrid() {
+            for (let row = 0; row < GRID_SIZE; row++) {
+                for (let col = 0; col < GRID_SIZE; col++) {
+                    if (grid[row][col] === -1) {
+                        grid[row][col] = Math.floor(Math.random() * cleaningIcons.length);
+                    }
+                }
+            }
+        }
+
+        function handleTileClick(row, col) {
+            if (isAnimating) return;
+            
+            const tile = getTileElement(row, col);
+            
+            if (!selectedTile) {
+                selectedTile = {row, col};
+                tile.classList.add('selected');
+            } else {
+                const prevTile = getTileElement(selectedTile.row, selectedTile.col);
+                prevTile.classList.remove('selected');
+                
+                if (areNeighbors(selectedTile.row, selectedTile.col, row, col)) {
+                    swapTiles(selectedTile.row, selectedTile.col, row, col);
+                }
+                
+                selectedTile = null;
+            }
+        }
+
+        function areNeighbors(row1, col1, row2, col2) {
+            return (Math.abs(row1 - row2) === 1 && col1 === col2) ||
+                   (Math.abs(col1 - col2) === 1 && row1 === row2);
+        }
+
+        function swapTiles(row1, col1, row2, col2) {
+            [grid[row1][col1], grid[row2][col2]] = [grid[row2][col2], grid[row1][col1]];
+            updateTiles();
+            
+            setTimeout(() => {
+                const matches = findMatches();
+                if (matches.length === 0) {
+                    [grid[row1][col1], grid[row2][col2]] = [grid[row2][col2], grid[row1][col1]];
+                    updateTiles();
+                } else {
+                    processMatches();
+                }
+            }, 300);
+        }
+
+        function findMatches() {
+            const matches = new Set();
+            
+            // Check horizontal
+            for (let row = 0; row < GRID_SIZE; row++) {
+                for (let col = 0; col < GRID_SIZE - 2; col++) {
+                    const icon = grid[row][col];
+                    if (icon === grid[row][col+1] && icon === grid[row][col+2]) {
+                        matches.add(`${row},${col}`);
+                        matches.add(`${row},${col+1}`);
+                        matches.add(`${row},${col+2}`);
+                    }
+                }
+            }
+            
+            // Check vertical
+            for (let col = 0; col < GRID_SIZE; col++) {
+                for (let row = 0; row < GRID_SIZE - 2; row++) {
+                    const icon = grid[row][col];
+                    if (icon === grid[row+1][col] && icon === grid[row+2][col]) {
+                        matches.add(`${row},${col}`);
+                        matches.add(`${row+1},${col}`);
+                        matches.add(`${row+2},${col}`);
+                    }
+                }
+            }
+            
+            return Array.from(matches).map(pos => {
+                const [row, col] = pos.split(',').map(Number);
+                return {row, col};
+            });
+        }
+
+        function processMatches() {
+            isAnimating = true;
+            const matches = findMatches();
+            
+            if (matches.length === 0) {
+                isAnimating = false;
+                return;
+            }
+            
+            score += matches.length * 100;
+            document.getElementById('score').textContent = score.toLocaleString();
+            updateProgress();
+            
+            if (score >= TARGET_SCORE) {
+                setTimeout(() => {
+                    showCompletionModal();
+                }, 1000);
+            }
+            
+            matches.forEach(({row, col}) => {
+                const tile = getTileElement(row, col);
+                tile.classList.add('matched');
+            });
+            
+            setTimeout(() => {
+                matches.forEach(({row, col}) => {
+                    grid[row][col] = -1;
+                });
+                
+                for (let col = 0; col < GRID_SIZE; col++) {
+                    let emptyRow = GRID_SIZE - 1;
+                    for (let row = GRID_SIZE - 1; row >= 0; row--) {
+                        if (grid[row][col] !== -1) {
+                            grid[emptyRow][col] = grid[row][col];
+                            if (emptyRow !== row) {
+                                grid[row][col] = -1;
+                            }
+                            emptyRow--;
+                        }
+                    }
+                    
+                    for (let row = emptyRow; row >= 0; row--) {
+                        grid[row][col] = Math.floor(Math.random() * cleaningIcons.length);
+                    }
+                }
+                
+                updateTiles();
+                
+                setTimeout(() => {
+                    processMatches();
+                }, 300);
+            }, 500);
+        }
+
+        function getTileElement(row, col) {
+            return document.querySelector(`[data-row="${row}"][data-col="${col}"]`);
+        }
+
+        function updateTiles() {
+            for (let row = 0; row < GRID_SIZE; row++) {
+                for (let col = 0; col < GRID_SIZE; col++) {
+                    const tile = getTileElement(row, col);
+                    const icon = grid[row][col];
+                    if (icon !== -1) {
+                        tile.className = 'tile';
+                        tile.textContent = cleaningIcons[icon];
+                    }
+                }
+            }
+        }
+
+        function updateProgress() {
+            const progress = Math.min((score / TARGET_SCORE) * 100, 100);
+            const progressEl = document.getElementById('progress');
+            progressEl.style.width = progress + '%';
+            progressEl.textContent = Math.floor(progress) + '%';
+        }
+
+        function showCompletionModal() {
+            isAnimating = true;
+            const modal = document.getElementById('completionModal');
+            const text = document.getElementById('completionText');
+            
+            text.textContent = `Amazing! You reached ${score.toLocaleString()} points! Your cleaning skills are spotless!`;
+            modal.classList.add('show');
+        }
+
+        function resetGame() {
+            const modal = document.getElementById('completionModal');
+            modal.classList.remove('show');
+            
+            score = 0;
+            document.getElementById('score').textContent = score;
+            updateProgress();
+            
+            selectedTile = null;
+            isAnimating = false;
+            createGrid();
+        }
+
+        // Form submission feedback
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const form = this;
+            const submitBtn = form.querySelector('.submit-btn');
+            
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 3000);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Initialize service cards animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Initialize the game
+        createGrid();
+        updateProgress();
+    </script>
+</body>
+</html>
